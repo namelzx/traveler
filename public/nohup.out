@@ -1,0 +1,45 @@
+[Fri Mar 30 15:44:17 2018] ::1:50080 [200]: /
+[Fri Mar 30 15:44:17 2018] ::1:50081 [200]: /favicon.ico
+[Fri Mar 30 15:47:23 2018] ::1:50106 [500]: /
+[Fri Mar 30 15:47:36 2018] ::1:50107 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:47:36 2018] ::1:50108 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:47:36 2018] ::1:50109 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:47:55 2018] ::1:50119 [500]: /
+[Fri Mar 30 15:47:55 2018] ::1:50120 [200]: /favicon.ico
+[Fri Mar 30 15:48:06 2018] ::1:50121 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:48:20 2018] ::1:50134 [500]: /
+[Fri Mar 30 15:48:21 2018] ::1:50135 [200]: /favicon.ico
+[Fri Mar 30 15:48:22 2018] ::1:50136 [500]: /
+[Fri Mar 30 15:48:22 2018] ::1:50148 [200]: /favicon.ico
+[Fri Mar 30 15:48:34 2018] ::1:50149 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:49:25 2018] ::1:50230 [200]: /
+[Fri Mar 30 15:49:26 2018] ::1:50231 [200]: /favicon.ico
+[Fri Mar 30 15:49:36 2018] ::1:50232 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:54:17 2018] ::1:50428 [500]: /
+[Fri Mar 30 15:54:18 2018] ::1:50429 [200]: /favicon.ico
+[Fri Mar 30 15:54:19 2018] ::1:50430 [500]: /
+[Fri Mar 30 15:54:19 2018] ::1:50432 [200]: /favicon.ico
+[Fri Mar 30 15:54:29 2018] ::1:50433 Invalid request (Unexpected EOF)
+[Fri Mar 30 15:57:34 2018] ::1:50720 [200]: /
+[Fri Mar 30 15:57:34 2018] ::1:50721 [200]: /favicon.ico
+[Fri Mar 30 15:57:37 2018] ::1:50722 [200]: /
+[Fri Mar 30 15:57:38 2018] ::1:50724 [200]: /favicon.ico
+[Fri Mar 30 15:57:48 2018] ::1:50725 Invalid request (Unexpected EOF)
+[Fri Mar 30 16:01:22 2018] ::1:50878 [200]: /
+[Fri Mar 30 16:01:22 2018] ::1:50879 [200]: /favicon.ico
+[Fri Mar 30 16:01:22 2018] ::1:50880 [200]: /
+[Fri Mar 30 16:01:23 2018] ::1:50881 [200]: /favicon.ico
+[Fri Mar 30 16:01:33 2018] ::1:50882 Invalid request (Unexpected EOF)
+[Fri Mar 30 16:01:33 2018] ::1:50883 [500]: /
+[Fri Mar 30 16:01:33 2018] ::1:50884 [200]: /favicon.ico
+[Fri Mar 30 16:01:34 2018] ::1:50885 [500]: /
+[Fri Mar 30 16:01:34 2018] ::1:50886 [200]: /favicon.ico
+[Fri Mar 30 16:01:34 2018] ::1:50887 [500]: /
+[Fri Mar 30 16:01:34 2018] ::1:50888 [200]: /favicon.ico
+[Fri Mar 30 16:01:46 2018] ::1:50889 Invalid request (Unexpected EOF)
+[Fri Mar 30 16:01:46 2018] ::1:50891 [500]: /
+[Fri Mar 30 16:01:46 2018] ::1:50892 [200]: /favicon.ico
+[Fri Mar 30 16:01:58 2018] ::1:50893 Invalid request (Unexpected EOF)
+[Fri Mar 30 16:02:42 2018] ::1:50951 [500]: /
+[Fri Mar 30 16:02:42 2018] ::1:50952 [200]: /favicon.ico
+[Fri Mar 30 16:02:54 2018] ::1:50953 Invalid request (Unexpected EOF)
