@@ -43,3 +43,33 @@
 [Fri Mar 30 16:02:42 2018] ::1:50951 [500]: /
 [Fri Mar 30 16:02:42 2018] ::1:50952 [200]: /favicon.ico
 [Fri Mar 30 16:02:54 2018] ::1:50953 Invalid request (Unexpected EOF)
+[Fri Mar 30 23:13:02 2018] ::1:54556 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:13:02 2018] ::1:54557 [200]: /favicon.ico
+[Fri Mar 30 23:13:20 2018] ::1:54558 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:13:20 2018] ::1:54559 [200]: /favicon.ico
+[Fri Mar 30 23:13:21 2018] ::1:54560 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:13:21 2018] ::1:54561 [200]: /favicon.ico
+[Fri Mar 30 23:13:29 2018] ::1:54562 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:13:45 2018] ::1:54565 Invalid request (Unexpected EOF)
+[Fri Mar 30 23:13:45 2018] ::1:54566 Invalid request (Unexpected EOF)
+[Fri Mar 30 23:13:45 2018] ::1:54569 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:13:45 2018] ::1:54570 [200]: /favicon.ico
+[Fri Mar 30 23:13:46 2018] ::1:54571 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:13:46 2018] ::1:54572 [200]: /favicon.ico
+[Fri Mar 30 23:13:48 2018] ::1:54573 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:14:00 2018] ::1:54574 Invalid request (Unexpected EOF)
+[Fri Mar 30 23:14:00 2018] ::1:54575 Invalid request (Unexpected EOF)
+[Fri Mar 30 23:14:08 2018] ::1:54578 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:14:08 2018] ::1:54579 [200]: /favicon.ico
+[Fri Mar 30 23:14:09 2018] ::1:54580 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:14:09 2018] ::1:54581 [200]: /favicon.ico
+[Fri Mar 30 23:14:58 2018] ::1:54590 [200]: / - require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/traveler/public/../thinkphp/base.php' (include_path='.:') in /Applications/XAMPP/xamppfiles/htdocs/traveler/public/index.php on line 16
+[Fri Mar 30 23:14:59 2018] ::1:54591 [200]: /favicon.ico
+[Fri Mar 30 23:17:57 2018] ::1:54641 [200]: /
+[Fri Mar 30 23:18:08 2018] ::1:54642 Invalid request (Unexpected EOF)
+[Fri Mar 30 23:18:08 2018] ::1:54647 [200]: /
+[Fri Mar 30 23:18:08 2018] ::1:54648 [200]: /favicon.ico
+[Fri Mar 30 23:18:42 2018] ::1:54651 [200]: /
+[Fri Mar 30 23:18:42 2018] ::1:54652 [200]: /favicon.ico
+[Fri Mar 30 23:18:43 2018] ::1:54653 [200]: /
+[Fri Mar 30 23:18:43 2018] ::1:54654 [200]: /favicon.ico
