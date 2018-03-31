@@ -10,7 +10,8 @@ class Index
 //        $captcha = new Captcha();
 //        return $captcha->entry();
 //        print phpinfo();
-        dump("ss");
+//        dump("ss");
+        return view();
     }
 
     public function hello($name = 'ThinkPHP5')
