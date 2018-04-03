@@ -3,31 +3,301 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vue-ydui Demo</title>
+    <title>test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 引入样式 -->
-    <link rel="stylesheet" href="//unpkg.com/vue-ydui/dist/ydui.rem.css">
+    <link rel="stylesheet" href="__YDUI__/ydui.rem.css">
     <!-- 引入rem自适应类库 -->
-    <script src="//unpkg.com/vue-ydui/dist/ydui.flexible.js"></script>
+    <script src="__YDUI__/ydui.flexible.js"></script>
+    <!-- 引入 Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- 引入组件库 -->
+    <script src="__YDUI__/ydui.rem.js"></script>
 </head>
-<body>
-<div id="app">
-    <yd-button type="primary" @click.native="handleClick">Click Me!</yd-button>
-</div>
-<!-- 引入 Vue -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<!-- 引入组件库 -->
-<script src="//unpkg.com/vue-ydui/dist/ydui.rem.js"></script>
 
-<script >
+<style>
+    [v-cloak] {
+        display: none;
+    }
+
+    /*!*数据*!*/
+    /*.loader {*/
+        /*position: fixed;*/
+        /*left: 50%;*/
+        /*top: 50%;*/
+        /*margin: -0.2em 0 0 -0.2em;*/
+        /*text-indent: -9999em;*/
+        /*border-top: 0.3em solid rgba(0, 0, 0, 0.1);*/
+        /*border-right: 0.3em solid rgba(0, 0, 0, 0.1);*/
+        /*border-bottom: 0.3em solid rgba(0, 0, 0, 0.1);*/
+        /*border-left: 0.3em solid #555;*/
+        /*-moz-transform: translateZ(0);*/
+        /*-webkit-transform: translateZ(0);*/
+        /*transform: translateZ(0);*/
+        /*-moz-animation: loader 300ms infinite linear;*/
+        /*-webkit-animation: loader 300ms infinite linear;*/
+        /*animation: loader 300ms infinite linear;*/
+        /*-moz-transition: all 500ms ease;*/
+        /*-o-transition: all 500ms ease;*/
+        /*-webkit-transition: all 500ms ease;*/
+        /*transition: all 500ms ease;*/
+    /*}*/
+
+    /*.loader,*/
+    /*.loader:after {*/
+        /*border-radius: 50%;*/
+        /*width: 2em;*/
+        /*height: 2em;*/
+    /*}*/
+
+    /*.curtain {*/
+        /*position: fixed;*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*background-color: white;*/
+        /*-moz-transition: all 600ms ease;*/
+        /*-o-transition: all 600ms ease;*/
+        /*-webkit-transition: all 600ms ease;*/
+        /*transition: all 600ms ease;*/
+        /*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);*/
+        /*opacity: 0;*/
+        /*z-index: 0;*/
+        /*overflow: hidden;*/
+    /*}*/
+
+    /*@-webkit-keyframes loader {*/
+        /*0% {*/
+            /*-webkit-transform: rotate(0deg);*/
+            /*transform: rotate(0deg);*/
+        /*}*/
+        /*100% {*/
+            /*-webkit-transform: rotate(360deg);*/
+            /*transform: rotate(360deg);*/
+        /*}*/
+    /*}*/
+
+    /*@-moz-keyframes loader {*/
+        /*0% {*/
+            /*-moz-transform: rotate(0deg);*/
+            /*transform: rotate(0deg);*/
+        /*}*/
+        /*100% {*/
+            /*-moz-transform: rotate(360deg);*/
+            /*transform: rotate(360deg);*/
+        /*}*/
+    /*}*/
+
+    /*@keyframes loader {*/
+        /*0% {*/
+            /*-webkit-transform: rotate(0deg);*/
+            /*transform: rotate(0deg);*/
+        /*}*/
+        /*100% {*/
+            /*-webkit-transform: rotate(360deg);*/
+            /*transform: rotate(360deg);*/
+        /*}*/
+    /*}*/
+
+    /*.is-loading {*/
+        /*overflow: hidden;*/
+    /*}*/
+
+    /*.is-loading .curtain {*/
+        /*filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);*/
+        /*opacity: 1;*/
+        /*z-index: 99;*/
+    /*}*/
+
+    /*.is-loading .loader {*/
+        /*filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);*/
+        /*opacity: 1;*/
+    /*}*/
+
+    /*数据加载结束*/
+</style>
+
+<body>
+
+<div id="app" style="height: 100%;" v-cloak>
+
+
+    <!--<yd-layout title="啦啦啦啦" link="#">-->
+        <!--<yd-cell-group>-->
+            <!--<yd-cell-item>-->
+                <!--<yd-rate slot="left" v-model="rate7" :show-text="['很差','还行','一般','挺好','非常好']"></yd-rate>-->
+                <!--<span slot="right">提示文字</span>-->
+            <!--</yd-cell-item>-->
+            <!--<yd-cell-item>-->
+                <!--<yd-rate slot="left" v-model="rate8" :show-text="tipText"></yd-rate>-->
+                <!--<span slot="right">HTML提示模板</span>-->
+            <!--</yd-cell-item>-->
+        <!--</yd-cell-group>-->
+        <!--<yd-rollnotice autoplay="2000">-->
+            <!--<yd-rollnotice-item><span style="color:#F00;"> 荐 </span>荣耀V9 3月超级钜惠！</yd-rollnotice-item>-->
+            <!--<yd-rollnotice-item><span style="color:#F00;"> 荐 </span>3.23京东超级品牌日格力盛典</yd-rollnotice-item>-->
+            <!--<yd-rollnotice-item><span style="color:#F00;"> 荐 </span>京东服饰 早春新品低至7折</yd-rollnotice-item>-->
+        <!--</yd-rollnotice>-->
+
+        <!--<yd-infinitescroll :callback="loadList" ref="infinitescrollDemo">-->
+
+            <!--<yd-list theme="1" slot="list">-->
+                <!--<yd-list-item v-for="item, key in list" :key="key">-->
+                    <!--<img slot="img" :src="item.img">-->
+                    <!--<span slot="title">{{item.title}}</span>-->
+                    <!--<yd-list-other slot="other">-->
+                        <!--<div>-->
+                            <!--<span class="list-price"><em>¥</em>{{item.marketprice}}</span>-->
+                            <!--<span class="list-del-price">¥{{item.productprice}}</span>-->
+                        <!--</div>-->
+                        <!--<div>content</div>-->
+                    <!--</yd-list-other>-->
+                <!--</yd-list-item>-->
+            <!--</yd-list>-->
+
+            <!--&lt;!&ndash; 数据全部加载完毕显示 &ndash;&gt;-->
+            <!--<span slot="doneTip">啦啦啦，啦啦啦，没有数据啦~~</span>-->
+
+            <!--&lt;!&ndash; 加载中提示，不指定，将显示默认加载中图标 &ndash;&gt;-->
+            <!--<img slot="loadingTip" src="http://static.ydcss.com/uploads/ydui/loading/loading10.svg"/>-->
+
+        <!--</yd-infinitescroll>-->
+
+        <!--<yd-tabbar slot="tabbar">-->
+            <!--<yd-tabbar-item title="首页" link="#">-->
+                <!--<yd-icon name="home" slot="icon"></yd-icon>-->
+            <!--</yd-tabbar-item>-->
+            <!--<yd-tabbar-item title="购物车" link="#" active>-->
+                <!--<yd-icon name="shopcart" slot="icon"></yd-icon>-->
+            <!--</yd-tabbar-item>-->
+            <!--<yd-tabbar-item title="个人中心" link="#">-->
+                <!--<yd-icon name="ucenter-outline" slot="icon"></yd-icon>-->
+            <!--</yd-tabbar-item>-->
+        <!--</yd-tabbar>-->
+    <!--</yd-layout>-->
+    <yd-infinitescroll :callback="loadList" ref="infinitescrollDemo">
+
+        <yd-list theme="1" slot="list">
+            <yd-list-item v-for="item, key in list" :key="key">
+                <img slot="img" :src="item.img">
+                <span slot="title">{{item.title}}</span>
+                <yd-list-other slot="other">
+                    <div>
+                        <span class="list-price"><em>¥</em>{{item.marketprice}}</span>
+                        <span class="list-del-price">¥{{item.productprice}}</span>
+                    </div>
+                    <div>content</div>
+                </yd-list-other>
+            </yd-list-item>
+        </yd-list>
+
+        <!-- 数据全部加载完毕显示 -->
+        <span slot="doneTip">啦啦啦，啦啦啦，没有数据啦~~</span>
+
+        <!-- 加载中提示，不指定，将显示默认加载中图标 -->
+        <img slot="loadingTip" src="http://static.ydcss.com/uploads/ydui/loading/loading10.svg"/>
+
+    </yd-infinitescroll>
+</div>
+
+
+<!--<script>-->
+
+    <!--// window.onload=function(){-->
+    <!--//-->
+    <!--//     $('body').removeClass('is-loading');-->
+    <!--// }-->
+
+    <!--new Vue({-->
+        <!--el: '#app',-->
+        <!--methods: {-->
+            <!--handleClick: function () {-->
+                <!--this.$dialog.alert({mes: 'Hello World!'});-->
+            <!--},-->
+
+        <!--}-->
+
+
+    <!--})-->
+<!--</script>-->
+
+
+<script type="text/babel">
+
     new Vue({
         el: '#app',
-        methods: {
-            handleClick: function () {
-                this.$dialog.alert({mes: 'Hello World!'});
+        data : {
+            return: {
+                page: 1,
+                pageSize: 10,
+                list: [
+                    {
+                        img: "http://img1.shikee.com/try/2016/06/23/14381920926024616259.jpg",
+                        title: "标题标题标题标题标题",
+                        marketprice: 56.23,
+                        productprice: 89.36
+                    },
+                    {
+                        img: "http://img1.shikee.com/try/2016/06/21/10172020923917672923.jpg",
+                        title: "骆驼男装2016夏装男士短袖T恤 圆领衣服 印花男装体恤 半袖打底衫",
+                        marketprice: 56.23,
+                        productprice: 89.36
+                    },
+                    {
+                        img: "http://img1.shikee.com/try/2016/06/23/15395220917905380014.jpg",
+                        title: "条纹短袖T恤男士韩版衣服大码潮流男装夏季圆领体恤2016新款半袖",
+                        marketprice: 56.23,
+                        productprice: 89.36
+                    },
+                    {
+                        img: "http://img1.shikee.com/try/2016/06/25/14244120933639105658.jpg",
+                        title: "夏季青少年衣服男生潮牌t恤 男士 夏秋学生 日系棉短袖半袖男小衫",
+                        marketprice: 56.23,
+                        productprice: 89.36
+                    },
+                    {
+                        img: "http://img1.shikee.com/try/2016/06/26/12365720933909085511.jpg",
+                        title: "2016夏装新款时尚潮流短袖T恤男纯棉V领日系青少年韩版夏季上衣服",
+                        marketprice: 56.23,
+                        productprice: 89.36
+                    },
+                    {
+                        img: "http://img1.shikee.com/try/2016/06/19/09430120929215230041.jpg",
+                        title: "男装衣服男夏t恤 男士短袖t恤圆领夏季潮牌宽松原宿风半截袖男",
+                        marketprice: 56.23,
+                        productprice: 89.36
+                    }
+                ]
             }
         },
+        methods: {
+            loadList() {
+                this.$http.jsonp('http://list.ydui.org/getdata.php?type=backposition', {
+                    params: {
+                        page: this.page,
+                        pagesize: this.pageSize
+                    }
+                }).then(function (response) {
+                    const _list = response.body;
+
+                    this.list = [...this.list, ..._list];
+
+                    if (_list.length < this.pageSize || this.page == 3) {
+                        /* 所有数据加载完毕 */
+                        this.$refs.infinitescrollDemo.$emit('ydui.infinitescroll.loadedDone');
+                        return;
+                    }
+
+                    /* 单次请求数据完毕 */
+                    this.$refs.infinitescrollDemo.$emit('ydui.infinitescroll.finishLoad');
+
+                    this.page++;
+                });
+            }
+        }
     })
+
 </script>
 
 </body>
