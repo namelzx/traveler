@@ -1,19 +1,21 @@
-<?php /*a:3:{s:86:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/index/index.html";i:1522840059;s:88:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/public/header.html";i:1522838624;s:88:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/public/footer.html";i:1522838542;}*/ ?>
+<?php /*a:3:{s:86:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/index/index.html";i:1522849719;s:88:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/public/header.html";i:1522849609;s:88:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/public/footer.html";i:1522847517;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo htmlentities($title); ?></title>
-    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
     <meta content="yes" name="apple-mobile-web-app-capable"/>
     <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
     <meta content="telephone=no" name="format-detection"/>
-    <link rel="stylesheet" href="/static/mian.css">
+
     <!-- 引入YDUI样式 -->
     <link rel="stylesheet" href="/static/ydui/css/ydui.css"/>
     <!-- 引入YDUI自适应解决方案类库 -->
     <script src="/static/ydui/js/ydui.flexible.js"></script>
+
+    <link rel="stylesheet" href="/static/mian.css">
 </head>
 <style>
     /*[v-cloak] {*/
@@ -122,9 +124,6 @@
         color: #fff;
 
     }
-    .tabbar-item .tabbar-txt{
-        font-size: 0.3rem;
-    }
 
 
     input::-webkit-input-placeholder{
@@ -177,23 +176,23 @@
             <div class="slider-item" >
                 <a href="#">
                     <img src="/static/images/banner.jpg">
-                    <p class="p">
-                    <span>
-                        TOURISM IS UP,JOBS ARE UP,
-                        INDIVIDUAL INCOME IS UP
-                    </span>
-                    </p>
+                    <!--<p class="p">-->
+                    <!--<span>-->
+                        <!--TOURISM IS UP,JOBS ARE UP,-->
+                        <!--INDIVIDUAL INCOME IS UP-->
+                    <!--</span>-->
+                    <!--</p>-->
                 </a>
             </div>
             <div class="slider-item" >
                 <a href="#">
                     <img src="/static/images/banner2.jpg">
-                    <p class="p">
-                    <span>
-                        TOURISM IS UP,JOBS ARE UP,
-                        INDIVIDUAL INCOME IS UP
-                    </span>
-                    </p>
+                    <!--<p class="p">-->
+                    <!--<span>-->
+                        <!--TOURISM IS UP,JOBS ARE UP,-->
+                        <!--INDIVIDUAL INCOME IS UP-->
+                    <!--</span>-->
+                    <!--</p>-->
                 </a>
             </div>
 
@@ -235,7 +234,8 @@
         }
         .grids-txt {
 
-            margin-top: 13px;
+            margin-top: 5px;
+            margin-bottom: 10px;
         }
         .main .m-grids-2{
             margin-top: 2px;
@@ -257,7 +257,7 @@
             </a>
         </div>
         <div class="m-grids-2">
-            <a href="#" class="grids-item left" style="background: #0398d0;">
+            <a href="<?php echo url('hotel/index'); ?>" class="grids-item left" style="background: #0398d0;">
                 <div class="grids-txt"><span>酒店</span></div>
                 <div class="grids-icon"><img src="/static/images/ico/hotel.png"></div>
             </a>
@@ -308,11 +308,12 @@
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- 引入YDUI脚本 -->
 <script src="/static/ydui/js/ydui.js"></script>
+
+<script src="http://static.ydcss.com/uploads/ydui/ydui.citys.js"></script>
 </body>
 </html>
 
 
-<script src="http://static.ydcss.com/uploads/ydui/ydui.citys.js"></script>
 <script>
     var $target = $('#J_Address2');
 
