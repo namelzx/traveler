@@ -1,4 +1,49 @@
-{include file="public/header" /}
+<?php /*a:3:{s:86:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/index/index.html";i:1522840059;s:88:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/public/header.html";i:1522838624;s:88:"/Applications/XAMPP/xamppfiles/htdocs/traveler/application/index/view/public/footer.html";i:1522838542;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?php echo htmlentities($title); ?></title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="/static/mian.css">
+    <!-- 引入YDUI样式 -->
+    <link rel="stylesheet" href="/static/ydui/css/ydui.css"/>
+    <!-- 引入YDUI自适应解决方案类库 -->
+    <script src="/static/ydui/js/ydui.flexible.js"></script>
+</head>
+<style>
+    /*[v-cloak] {*/
+    /*display: none;*/
+    /*}*/
+    @font-face {
+        font-family: 'iconfont';  /* project id 617099 */
+        src: url('//at.alicdn.com/t/font_617099_uzmnprus9ssjor.eot');
+        src: url('//at.alicdn.com/t/font_617099_uzmnprus9ssjor.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_617099_uzmnprus9ssjor.woff') format('woff'),
+        url('//at.alicdn.com/t/font_617099_uzmnprus9ssjor.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_617099_uzmnprus9ssjor.svg#iconfont') format('svg');
+    }
+    .iconfont{
+        font-family:"iconfont" !important;
+        font-size:0.5rem;font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;}
+    .tabbar-icon{
+        color: #fff;
+    }
+</style>
+<body>
+<section class="g-flexview">
+
+
+
+
+
 
 <style>
     .element::-webkit-scrollbar {display:none}
@@ -131,7 +176,7 @@
         <div class="slider-wrapper">
             <div class="slider-item" >
                 <a href="#">
-                    <img src="__IMAGES__/banner.jpg">
+                    <img src="/static/images/banner.jpg">
                     <p class="p">
                     <span>
                         TOURISM IS UP,JOBS ARE UP,
@@ -142,7 +187,7 @@
             </div>
             <div class="slider-item" >
                 <a href="#">
-                    <img src="__IMAGES__/banner2.jpg">
+                    <img src="/static/images/banner2.jpg">
                     <p class="p">
                     <span>
                         TOURISM IS UP,JOBS ARE UP,
@@ -205,28 +250,28 @@
         <div class="m-grids-2">
             <a href="#" class="grids-item left" style="background: #0073d0;border-radius: 5px 0 0 0;">
                 <div class="grids-txt"><span>拼单</span></div>
-                <div class="grids-icon"><img src="__IMAGES__/ico/plane.png"></div>
+                <div class="grids-icon"><img src="/static/images/ico/plane.png"></div>
             </a>
             <a href="#" class="grids-item right" style="border-radius: 0 5px 0 0;">
-                <img src="__IMAGES__/plane.png" style="    border-radius: 0 5px 0 0;">
+                <img src="/static/images/plane.png" style="    border-radius: 0 5px 0 0;">
             </a>
         </div>
         <div class="m-grids-2">
             <a href="#" class="grids-item left" style="background: #0398d0;">
                 <div class="grids-txt"><span>酒店</span></div>
-                <div class="grids-icon"><img src="__IMAGES__/ico/hotel.png"></div>
+                <div class="grids-icon"><img src="/static/images/ico/hotel.png"></div>
             </a>
             <a href="#" class="grids-item right">
-                <img src="__IMAGES__/office.jpg">
+                <img src="/static/images/office.jpg">
             </a>
         </div>
         <div class="m-grids-2">
             <a href="#" class="grids-item left" style="background: #00c1e6;border-radius: 0 0 0 5px;">
                 <div class="grids-txt"><span>近期特价</span></div>
-                <div class="grids-icon"><img src="__IMAGES__/ico/offer.png"></div>
+                <div class="grids-icon"><img src="/static/images/ico/offer.png"></div>
             </a>
             <a href="#" class="grids-item right">
-                <img src="__IMAGES__/offer.jpg" style="border-radius: 0 0 5px 0;">
+                <img src="/static/images/offer.jpg" style="border-radius: 0 0 5px 0;">
             </a>
         </div>
 
@@ -235,7 +280,36 @@
 </div>
 
 
-{include file="public/footer" /}
+<footer class="m-tabbar" style=" background: #339ddc;">
+    <a href="#" class="tabbar-item ">
+            <span class="tabbar-icon">
+               <i class="iconfont ">&#xe62a;</i>
+            </span>
+        <span class="tabbar-txt">首页</span>
+    </a>
+    <a href="#" class="tabbar-item">
+            <span class="tabbar-icon">
+              <i
+                        class="iconfont ">&#xe61f;</i>
+            </span>
+        <span class="tabbar-txt">客服</span>
+    </a>
+
+    <a href="#" class="tabbar-item">
+            <span class="tabbar-icon">
+             <i
+                        class="iconfont ">&#xe629;</i>
+            </span>
+        <span class="tabbar-txt">个人中心</span>
+    </a>
+</footer>
+</section>
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- 引入YDUI脚本 -->
+<script src="/static/ydui/js/ydui.js"></script>
+</body>
+</html>
 
 
 <script src="http://static.ydcss.com/uploads/ydui/ydui.citys.js"></script>

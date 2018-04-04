@@ -32,6 +32,9 @@ return [
     'taglib_end' => '}',
     'tpl_replace_string' => [
         '__STATIC__' => '/static',
-        '__YDUI__' => '/static/vue/ydui'
+        '__YDUI__' => '/static/ydui',
+        '__WEUI__' => '/static/weui',
+        '__IMAGES__' => '/static/images',
+        '__PUBLIC__'=>'/static/public/'
     ],
 ];

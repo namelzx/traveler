@@ -3,11 +3,16 @@
 namespace app\index\controller;
 
 
-class Index
+use think\Controller;
+
+class Index extends Controller
 {
     public function index()
     {
-
+        $assign=[
+            'title'=>"首页"
+        ];
+        $this->assign($assign);
         return view();
     }
 
